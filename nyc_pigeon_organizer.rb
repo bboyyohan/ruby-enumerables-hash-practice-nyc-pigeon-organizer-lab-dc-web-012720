@@ -30,4 +30,24 @@ end
     end
 end
 end
+data[:lives].each do |key, value|
+  
+  value.each do |name|
+    
+    if new_hash[name]
+      new_hash[name.to_s][:lives] = []
+      new_hash[name.to_s][:lives] << key.to_s
+     
+    else
+      new_hash[name.to_s] = {
+        :lives => [key.to_s]
+      }
+      
+  end
+end
+end
+ return new_hash
+ 
+end
+
 

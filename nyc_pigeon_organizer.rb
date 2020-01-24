@@ -24,7 +24,7 @@ end
         new_hash[name.to_s][:gender] = []
         new_hash[name.to_s][:gender] << key.to_s
       else
-          solution[name.to_s] = {
+          new_hash[name.to_s] = {
             :gender => [key.to_s]
         }
     end

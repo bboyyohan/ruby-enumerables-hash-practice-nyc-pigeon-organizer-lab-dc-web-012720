@@ -20,10 +20,9 @@ end
       
     value.each do |name|
       
-      if solution[name]
-        # binding.pry
-        solution[name.to_s][:gender] = []
-        solution[name.to_s][:gender] << key.to_s
+      if new_hash[name]
+        new_hash[name.to_s][:gender] = []
+        new_hash[name.to_s][:gender] << key.to_s
       else
           solution[name.to_s] = {
             :gender => [key.to_s]
